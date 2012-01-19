@@ -74,7 +74,7 @@ module PermanentRecords
       respond_to?(:deleted_at)
     end
 
-    def deleted?
+    def is_deleted?
       deleted_at if is_permanent?
     end
 
