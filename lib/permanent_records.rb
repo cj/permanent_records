@@ -133,7 +133,7 @@ module PermanentRecords
           return permanently_delete_records_after{ destroy_without_permanent_records }
         end
       end
-      unless deleted? || new_record?
+      unless is_deleted? || new_record?
         set_deleted_at Time.now
       end
       if active_record_3?
