@@ -92,6 +92,7 @@ module PermanentRecords
       end
       self
     end
+    alias_method :restore, :revive
 
     def destroy(force = nil)
       if active_record_3?
